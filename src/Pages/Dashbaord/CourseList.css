@@ -1,0 +1,24 @@
+.course-list-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  grid-gap: 20px; /* Gap between grid items */
+}
+
+/* Media query to make the layout responsive */
+@media screen and (max-width: 768px) {
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+  }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+  .course-grid {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+  }
+}
